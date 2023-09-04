@@ -1,0 +1,66 @@
+package main
+
+import (
+	"fmt"
+
+	"github.com/01-edu/z01"
+)
+
+func main() {
+	quad(5, 3)
+}
+
+func quad(y, x int) {
+	if y >= '' {
+		z01.PrintRune('o')
+		z01.PrintRune('-')
+		z01.PrintRune('-')
+		z01.PrintRune('-')
+
+	}
+	if y == 5 || y == 1 || x == 1 {
+		z01.PrintRune('o')
+
+	}
+	if x == 3 {
+		z01.PrintRune('\n')
+		z01.PrintRune('|')
+		z01.PrintRune(' ')
+		z01.PrintRune(' ')
+		z01.PrintRune(' ')
+		z01.PrintRune('|')
+		z01.PrintRune('\n')
+
+	} else if x == 5 {
+
+		z01.PrintRune('\n')
+		z01.PrintRune('|')
+		z01.PrintRune('\n')
+		z01.PrintRune('|')
+		z01.PrintRune('\n')
+		z01.PrintRune('|')
+		z01.PrintRune('\n')
+		z01.PrintRune('o')
+
+	}
+
+	if y == 5 && x == 3 {
+		z01.PrintRune('o')
+		z01.PrintRune('-')
+		z01.PrintRune('-')
+		z01.PrintRune('-')
+		z01.PrintRune('o')
+	}
+
+	/*var by string = ("(^_*)")
+	if y == 5 || x == 1 {
+
+		fmt.Println()
+		fmt.Printf("Binary int: %b---%b", x, y)
+		fmt.Printf("\nUnicode: %#U -- %#U ", 53, 51)
+		fmt.Println()
+		fmt.Print(by, "\n", y, x, "\n", ("done"))
+
+	}*/
+
+}
