@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func main() {
+    var age float64
+    var month float64
+    var days float64
+    var houers float64
+    var seconds float64
+    age = 29
+    month = age * 12
+    days = month * 30
+    houers = days * 24
+    seconds = houers * 60
+    fmt.Println("age in month is :", month)
+    fmt.Println("age in days is :", days)
+    fmt.Println("age in houers is :", houers)
+    fmt.Println("age in second is :", seconds)
+}
