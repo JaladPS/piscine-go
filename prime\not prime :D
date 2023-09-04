@@ -1,0 +1,25 @@
+package main
+
+import "fmt"
+
+func main() {
+	num := 101
+
+	if num == 0 {
+		fmt.Print("Error")
+	}
+
+	for counter := 2; counter <= num; counter++ {
+		if counter <= num && num%2 != 0 {
+
+			fmt.Print("Prime")
+			break
+		} else if num%2 == 0 {
+			fmt.Print("Not Prime")
+			break
+
+		}
+
+	}
+
+}
