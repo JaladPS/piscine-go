@@ -1,0 +1,60 @@
+package main
+
+import (
+    "github.com/01-edu/z01"
+)
+
+func main() {
+    result := Rot14("Hello! How are You?")
+
+    for _, r := range result {
+        z01.PrintRune(r)
+    }
+    z01.PrintRune('\n')
+}
+
+func Rot14(s string) string {
+    var datasave string
+    for a, assci := range s {
+        if a <= 3 {
+
+            datasave += string(assci + 14)
+
+        } else if a <= 4 {
+            datasave += string(assci - 12)
+        } else if a <= 6 {
+            datasave += string(assci)
+
+        } else if a <= 7 {
+
+            datasave += string(assci + 14)
+
+        } else if a <= 9 {
+
+            datasave += string(assci - 12)
+        } else if a <= 10 {
+
+            datasave += string(assci)
+        } else if a <= 11 {
+
+            datasave += string(assci + 14)
+        } else if a <= 12 {
+
+            datasave += string(assci - 12)
+        } else if a <= 13 {
+
+            datasave += string(assci + 14)
+        } else if a <= 14 {
+
+            datasave += string(assci)
+        } else if a <= 17 {
+            datasave += string(assci - 12)
+
+        } else if a <= 18 {
+            datasave += string(assci)
+
+        }
+
+    }
+    return datasave
+}
