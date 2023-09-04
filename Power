@@ -1,0 +1,24 @@
+package main
+
+import "fmt"
+
+func main() {
+    num := 5
+    nb := 2
+
+    counter := 0
+    power := 1
+    if num == 0 {
+        fmt.Print(power)
+    } else if num != 0 {
+
+        for counter = counter + 1; counter <= num; counter++ {
+            power = power * nb
+            if counter == num {
+                fmt.Print(power)
+
+            }
+
+        }
+    }
+}
