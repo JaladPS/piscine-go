@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func main() {
+    x := 42
+    y := 21
+    fmt.Printf("x = %d, y = %d\n", x, y)
+    setPoint(&x, &y)
+}
+
+func setPoint(x, y *int) {
+
+    return
+
+}
