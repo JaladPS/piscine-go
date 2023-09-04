@@ -1,1 +1,1 @@
-# piscine-go
+# Imitation is prohibited :D
