@@ -1,0 +1,25 @@
+package main
+
+import (
+	"fmt"
+
+	"github.com/01-edu/z01"
+)
+
+func main() {
+	fmt.Print(quad("len!"), 'A')
+
+}
+
+func quad(q string) string {
+	unicode := []rune(q)
+	for a, chr := range unicode {
+		for loop := 'A'; loop <= 'A'; loop++ {
+			a++
+
+			z01.PrintRune(chr)
+
+		}
+	}
+	return ""
+}
