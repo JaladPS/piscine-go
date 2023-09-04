@@ -1,0 +1,44 @@
+package main
+
+import "fmt"
+
+func main() {
+
+    counter := 0 + 1
+    num := 30
+
+    for counter = counter - 1; counter <= num; counter++ {
+        if counter%2 == 1 {
+            fmt.Println(counter)
+            break
+        }
+
+    }
+    counter = counter + 2
+    for counter < num-24 {
+        counter++
+        if counter%2 == 0 {
+            fmt.Print(counter)
+            fmt.Print(" ")
+
+        }
+
+    }
+    fmt.Println()
+    counter = counter + 1
+    for counter < num-17 {
+        counter++
+        if counter%2 == 1 {
+            fmt.Print(counter)
+            fmt.Print(" ")
+        }
+    }
+    fmt.Println()
+    for counter = counter + 4; counter < num-5; counter++ {
+        if counter%2 == 1 {
+            fmt.Print(counter)
+            fmt.Print(" ")
+        }
+    }
+} 
+
