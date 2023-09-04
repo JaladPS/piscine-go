@@ -1,0 +1,30 @@
+package main
+
+import "fmt"
+
+func main() {
+    var ch float64
+    var totalsale int
+    var per float64
+    totalsale = 2000
+
+    if totalsale <= 10000 && totalsale >= 8000 {
+        per = 0.03
+        ch = per * float64(totalsale)
+
+    } else if totalsale <= 8000 && totalsale >= 6000 {
+        per = 0.02
+        ch = per * float64(totalsale)
+
+    } else if totalsale <= 6000 && totalsale >= 4000 {
+        per = 0.01
+        ch = per * float64(totalsale)
+
+    } else if totalsale <= 4000 && totalsale >= 1000 {
+        per = 0.00
+        ch = per * float64(totalsale)
+
+    }
+
+    fmt.Print(ch)
+}
