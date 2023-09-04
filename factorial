@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func main() {
+    num := 0
+    counter := num + 1
+    fictorial := 1
+    for counter = counter - 1; counter >= 1; counter-- {
+        fictorial = fictorial * counter
+
+        if counter == 1 {
+            fmt.Print(fictorial)
+        }
+
+    }
+    if num <= 0 {
+        fmt.Print("error")
+    }
+}
