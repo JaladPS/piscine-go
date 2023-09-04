@@ -1,0 +1,81 @@
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    
+
+    y := 1
+    x := 5
+    if y == 5 && x == 3 {
+        fmt.Print(quad2("o"))
+        fmt.Print(quad1("-"))
+        fmt.Print(quad2("x"))
+        fmt.Println()
+        fmt.Print("|")
+        fmt.Print(":D ")
+        fmt.Print("|")
+        //fmt.Print(quad3("|"))
+        fmt.Println()
+        fmt.Print(quad2("x"))
+        fmt.Print(quad1("-"))
+        fmt.Print(quad2("o"))
+    } else if y == 5 && x < 3 {
+        fmt.Print(quad2("o"))
+        fmt.Print(quad1("-"))
+        fmt.Print(quad2("o"))
+    } else if y == 1 && x == 1 {
+        fmt.Print(quad2("o"))
+    } else if y == 1 && x == 5 {
+        fmt.Print(quad2("o"))
+        fmt.Println()
+        fmt.Print(quad3("|"))
+        fmt.Print(quad2("o"))
+    }
+
+}
+
+func quad1(str string) string {
+    //runes := []rune(str)
+    for a, chr := range str {
+        chr++
+        chr--
+
+        for loop := a; loop < 3; loop++ {
+            fmt.Print(string(chr))
+            //fmt.Println(runes)
+
+        }
+
+    }
+    return ""
+
+}
+func quad2(str1 string) string {
+    a := str1
+
+    if a == "o" {
+        return a
+    } else if a == "x" {
+        return a
+    }
+    return ""
+}
+
+func quad3(str3 string) string {
+
+    for a, chr := range str3 {
+        chr++
+        chr--
+        for loop := a; loop < 3; loop++ {
+
+            fmt.Println(string(chr))
+
+        }
+
+    }
+    return ""
+
+}
