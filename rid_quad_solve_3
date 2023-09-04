@@ -1,0 +1,53 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	quad(1, 5)
+}
+
+func quad(y, x int) {
+	if y <= 5 || y <= 3 {
+		fmt.Print("o")
+
+		if y == 5 && x <= 3 {
+			for i := 'A'; i < 'B'; i++ {
+
+				fmt.Print("---o")
+			}
+		}
+
+	}
+	if y == 5 && x == 3 {
+		fmt.Println()
+		fmt.Print("|")
+		for g := 'A'; g < 'D'; g++ {
+			fmt.Print(" ")
+
+		}
+		if y == 5 {
+			fmt.Print("|")
+
+		}
+
+	} else if y < 5 && x > 3 {
+		for h := 'A'; h < 'D'; h++ {
+			fmt.Println()
+			fmt.Print("|")
+		}
+
+	}
+	if y <= 5 && x >= 3 {
+		fmt.Println()
+		fmt.Print("o")
+	}
+	if y == 5 && x == 3 {
+		for i := 'A'; i < 'B'; i++ {
+
+			fmt.Print("---o")
+		}
+	}
+
+}
