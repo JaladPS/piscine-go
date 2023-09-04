@@ -1,0 +1,26 @@
+package main
+
+import (
+    "github.com/01-edu/z01"
+)
+
+func main() {
+    z01.PrintRune(Fisrtrune("Hello!"))
+    z01.PrintRune(Fisrtrune("Salut!"))
+    z01.PrintRune(Fisrtrune("Ola!"))
+    z01.PrintRune('\n')
+}
+
+func Fisrtrune(s string) rune {
+    for a, assci := range s {
+
+        if a == 0 {
+            z01.PrintRune(assci)
+            z01.PrintRune('\n')
+
+        }
+
+    }
+    return 0
+
+}
