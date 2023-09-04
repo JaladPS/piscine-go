@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main() {
+
+    secuser := 193535
+    days := 24 * 60 * 60
+    houers := 60 * 60
+    mentus := 60
+    fmt.Println(secuser / days)
+    fmt.Println(secuser / houers)
+    fmt.Println(secuser / mentus)
+
+}
