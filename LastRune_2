@@ -13,8 +13,8 @@ func main() {
 
 func LastRune(s string) rune {
 	var datasave int32
-	for a, assci := range s {
-		a++
+	for _, assci := range s {
+
 		if len(s) == 6 {
 
 			datasave = assci
