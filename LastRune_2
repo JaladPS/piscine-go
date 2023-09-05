@@ -1,35 +1,31 @@
 package main
 
 import (
-    "github.com/01-edu/z01"
+	"github.com/01-edu/z01"
 )
 
 func main() {
-    z01.PrintRune(LastRune("Hello!"))
-    z01.PrintRune(LastRune("Salut!"))
-    z01.PrintRune(LastRune("Ola!"))
-    z01.PrintRune('\n')
+	z01.PrintRune(LastRune("Hello!"))
+	z01.PrintRune(LastRune("Salut!"))
+	z01.PrintRune(LastRune("Ola!"))
+	z01.PrintRune('\n')
 }
 
 func LastRune(s string) rune {
-    var datasave int32
-    for a, assci := range s {
-        a++
-        if a == 6 {
+	var datasave int32
+	for a, assci := range s {
+		a++
+		if len(s) == 6 {
 
-            datasave += assci
+			datasave = assci
 
-        }
-        if len(s) == 4 {
+		} else if len(s) != 6 {
+			datasave = assci
 
-            if a == 4 {
-                datasave += assci
-            }
+		}
 
-        }
+	}
 
-    }
-
-    return rune(datasave)
+	return rune(datasave)
 
 }
