@@ -1,0 +1,28 @@
+package main
+
+import (
+	"github.com/01-edu/z01"
+)
+
+func main() {
+	result := Rot14("Hello! How are You?")
+
+	for _, r := range result {
+		z01.PrintRune(r)
+	}
+	z01.PrintRune('\n')
+}
+
+func Rot14(s string) string {
+	var datasave string
+	for _, char := range s {
+		if 'A' <= char && char <= 'Z' {
+			datasave += string(((char - 'A' + 14) % 26) + 'A')
+		} else if 'a' <= char && char <= 'z' {
+			datasave += string(((char - 'a' + 14) % 26) + 'a')
+		} else {
+			datasave += string(char)
+		}
+	}
+	return datasave
+}
