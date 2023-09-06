@@ -63,7 +63,7 @@ func printquad2() {
 func printquad3() {
 	fmt.Println()
 	fmt.Print("|")
-	fmt.Print("XD ")
-	fmt.Print("|")
+	fmt.Print("\a")
+	fmt.Print("   |")
 
 }
