@@ -15,10 +15,9 @@ func quad(q string) string {
 	unicode := []rune(q)
 	for a, chr := range unicode {
 		for loop := 'A'; loop <= 'A'; loop++ {
-			a++
 
 			z01.PrintRune(chr)
-
+			fmt.Println(a)
 		}
 	}
 	return ""
