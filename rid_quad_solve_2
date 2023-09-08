@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/01-edu/z01"
 )
 
@@ -11,16 +9,18 @@ func main() {
 }
 
 func quad(y, x int) {
-	if y >= '' {
+	if y >= 5 {
 		z01.PrintRune('o')
 		z01.PrintRune('-')
 		z01.PrintRune('-')
 		z01.PrintRune('-')
 
 	}
-	if y == 5 || y == 1 || x == 1 {
+	if y == 5 {
 		z01.PrintRune('o')
 
+	} else if y == 1 || x == 1 {
+		z01.PrintRune('o')
 	}
 	if x == 3 {
 		z01.PrintRune('\n')
