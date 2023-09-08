@@ -34,9 +34,9 @@ func quad(y, x int) {
 		printquad2()
 		printquad4()
 		fmt.Println()
-		printquad1()
-		printquad3()
 		printquad2()
+		printquad3()
+		printquad1()
 
 	} else if y == 1 && x == 1 {
 		printquad1()
@@ -44,7 +44,7 @@ func quad(y, x int) {
 	} else if y == 5 && x == 1 {
 		printquad1()
 		printquad3()
-		printquad1()
+		printquad2()
 
 	} else if y == 1 && x == 5 {
 		printquad1()
