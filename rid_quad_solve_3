@@ -10,43 +10,43 @@ func main() {
 
 func quad(y, x int) {
 	if y <= 5 || y <= 3 {
-		fmt.Print("o")
+		fmt.Print("A")
 
 		if y == 5 && x <= 3 {
 			for i := 'A'; i < 'B'; i++ {
 
-				fmt.Print("---o")
+				fmt.Print("BBBC")
 			}
 		}
 
 	}
 	if y == 5 && x == 3 {
 		fmt.Println()
-		fmt.Print("|")
+		fmt.Print("B")
 		for g := 'A'; g < 'D'; g++ {
 			fmt.Print(" ")
 
 		}
 		if y == 5 {
-			fmt.Print("|")
+			fmt.Print("B")
 
 		}
 
 	} else if y < 5 && x > 3 {
 		for h := 'A'; h < 'D'; h++ {
 			fmt.Println()
-			fmt.Print("|")
+			fmt.Print("B")
 		}
 
 	}
 	if y <= 5 && x >= 3 {
 		fmt.Println()
-		fmt.Print("o")
+		fmt.Print("C")
 	}
 	if y == 5 && x == 3 {
 		for i := 'A'; i < 'B'; i++ {
 
-			fmt.Print("---o")
+			fmt.Print("BBBA")
 		}
 	}
 
