@@ -5,30 +5,48 @@ import "fmt"
 func main() {
 	quad(5, 3)
 }
+func printquad1() {
+	fmt.Print("o")
+}
+func printquad2() {
+	fmt.Print("o")
+}
+
+func printquad3() {
+
+	for loop := 0; loop < 3; loop++ {
+		fmt.Print("-")
+	}
+
+}
+func printquad4() {
+	fmt.Println()
+	fmt.Print("|")
+	fmt.Print("\a")
+	fmt.Print("   |")
+
+}
 
 func quad(y, x int) {
 	if y == 5 && x == 3 {
 		printquad1()
-		printquad2()
-		printquad1()
 		printquad3()
+		printquad2()
+		printquad4()
 		fmt.Println()
 		printquad1()
+		printquad3()
 		printquad2()
-		printquad1()
 
 	} else if y == 1 && x == 1 {
 		printquad1()
 
-	}
-
-	if y == 5 && x == 1 {
+	} else if y == 5 && x == 1 {
 		printquad1()
-		printquad2()
+		printquad3()
 		printquad1()
 
-	}
-	if y == 1 && x == 5 {
+	} else if y == 1 && x == 5 {
 		printquad1()
 
 	}
@@ -43,27 +61,8 @@ func quad(y, x int) {
 	}
 	if y == 1 && x == 5 {
 		fmt.Println()
-		printquad1()
+		printquad2()
 
 	}
-
-}
-
-func printquad1() {
-	fmt.Print("o")
-}
-
-func printquad2() {
-
-	for loop := 0; loop < 3; loop++ {
-		fmt.Print("-")
-	}
-
-}
-func printquad3() {
-	fmt.Println()
-	fmt.Print("|")
-	fmt.Print("\a")
-	fmt.Print("   |")
 
 }
