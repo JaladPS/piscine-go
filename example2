@@ -1,0 +1,72 @@
+package main
+
+import "fmt"
+
+func main() {
+	Quad(5, 1)
+}
+func Quad(x, y int) {
+
+	var zero int
+	var plus int
+	plus = 1
+
+	if x <= zero && y <= zero || x >= zero && y <= zero || x <= zero && y >= zero {
+		fmt.Print("error")
+	} else if x > plus && y >= plus {
+		if x >= plus {
+			quad()
+		}
+		for x >= y {
+			x--
+
+			if x-1 >= 1 {
+				quad1()
+			}
+
+			if x-2 == 0 {
+				quad()
+			}
+
+		}
+	} else if x == 1 && y == 1 {
+		quad()
+	}
+
+	if x >= 1 && y > 1 {
+		fmt.Println()
+		for y > x {
+			y--
+
+			fmt.Println("|")
+		}
+
+	}
+
+}
+
+func quad() {
+	fmt.Print("o")
+
+}
+func q1() {
+	fmt.Print("o")
+}
+func q2() {
+	fmt.Print("o")
+}
+func q3() {
+	fmt.Print("o")
+}
+
+func quad1() {
+
+	fmt.Print("-")
+}
+
+func quad2() {
+	fmt.Println("|")
+}
+func space() {
+	fmt.Print(" ")
+}
