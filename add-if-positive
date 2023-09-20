@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println(AddIfPositive(1, 2))
+	fmt.Println(AddIfPositive(1, -2))
+	fmt.Println(AddIfPositive(-1, 2))
+	fmt.Println(AddIfPositive(-1, -2))
+	fmt.Println(AddIfPositive(10, 20))
+	fmt.Println(AddIfPositive(0, 20))
+}
+
+func AddIfPositive(a int, b int) int {
+
+	if a >= 1 && b > 1 || a == 0 && b > 1 {
+		return int(a + b)
+	} else {
+		return 0
+	}
+
+}
